@@ -46,13 +46,13 @@ A modern, production-ready chat application built with React, Node.js, Express, 
 ## 🚀 Quick Start
 
 ### 1. Clone the repository
-\`\`\`bash
+```bash
 git clone <repository-url>
 cd fullstack-chat-app
-\`\`\`
+```
 
 ### 2. Backend Setup
-\`\`\`bash
+```bash
 cd server
 npm install
 
@@ -67,10 +67,10 @@ npm run db:seed
 
 # Start development server
 npm run dev
-\`\`\`
+```
 
 ### 3. Frontend Setup
-\`\`\`bash
+```bash
 cd ../client
 npm install
 
@@ -80,7 +80,7 @@ cp .env.example .env
 
 # Start development server
 npm start
-\`\`\`
+```
 
 ### 4. Access the application
 - Frontend: http://localhost:3000
@@ -90,7 +90,7 @@ npm start
 ## 🐳 Docker Setup
 
 ### Using Docker Compose
-\`\`\`bash
+```bash
 # Clone the repository
 git clone <repository-url>
 cd fullstack-chat-app
@@ -103,11 +103,11 @@ docker-compose logs -f
 
 # Stop services
 docker-compose down
-\`\`\`
+```
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 fullstack-chat-app/
 ├── client/                 # React frontend
 │   ├── public/
@@ -132,44 +132,44 @@ fullstack-chat-app/
 │   └── package.json
 ├── docker-compose.yml
 └── README.md
-\`\`\`
+```
 
 ## 🔌 API Endpoints
 
 ### Authentication
-- \`POST /api/auth/register\` - Register new user
-- \`POST /api/auth/login\` - Login user
-- \`POST /api/auth/logout\` - Logout user
-- \`GET /api/auth/profile\` - Get user profile
+- `POST /api/auth/register` - Register new user
+- `POST /api/auth/login` - Login user
+- `POST /api/auth/logout` - Logout user
+- `GET /api/auth/profile` - Get user profile
 
 ### Chat
-- \`GET /api/chat/rooms\` - Get all rooms
-- \`POST /api/chat/rooms\` - Create new room
-- \`POST /api/chat/rooms/:id/join\` - Join room
-- \`GET /api/chat/rooms/:id/messages\` - Get room messages
-- \`GET /api/chat/users/online\` - Get online users
+- `GET /api/chat/rooms` - Get all rooms
+- `POST /api/chat/rooms` - Create new room
+- `POST /api/chat/rooms/:id/join` - Join room
+- `GET /api/chat/rooms/:id/messages` - Get room messages
+- `GET /api/chat/users/online` - Get online users
 
 ## 🔌 Socket Events
 
 ### Client to Server
-- \`joinRoom(roomId)\` - Join a room
-- \`leaveRoom(roomId)\` - Leave a room
-- \`sendMessage(data)\` - Send message
-- \`typing(data)\` - Start typing
-- \`stopTyping(data)\` - Stop typing
+- `joinRoom(roomId)` - Join a room
+- `leaveRoom(roomId)` - Leave a room
+- `sendMessage(data)` - Send message
+- `typing(data)` - Start typing
+- `stopTyping(data)` - Stop typing
 
 ### Server to Client
-- \`newMessage(message)\` - New message received
-- \`userOnline(user)\` - User came online
-- \`userOffline(user)\` - User went offline
-- \`userTyping(data)\` - User started typing
-- \`userStoppedTyping(data)\` - User stopped typing
-- \`onlineUsers(users)\` - List of online users
+- `newMessage(message)` - New message received
+- `userOnline(user)` - User came online
+- `userOffline(user)` - User went offline
+- `userTyping(data)` - User started typing
+- `userStoppedTyping(data)` - User stopped typing
+- `onlineUsers(users)` - List of online users
 
 ## 🔧 Development
 
 ### Backend Development
-\`\`\`bash
+```bash
 cd server
 
 # Install dependencies
@@ -186,10 +186,10 @@ npm run db:seed
 
 # Run tests
 npm test
-\`\`\`
+```
 
 ### Frontend Development
-\`\`\`bash
+```bash
 cd client
 
 # Install dependencies
@@ -203,27 +203,27 @@ npm test
 
 # Build for production
 npm run build
-\`\`\`
+```
 
 ## 🧪 Testing
 
 ### Backend Tests
-\`\`\`bash
+```bash
 cd server
 npm test
 npm run test:coverage
-\`\`\`
+```
 
 ### Frontend Tests
-\`\`\`bash
+```bash
 cd client
 npm test
-\`\`\`
+```
 
 ## 🚀 Deployment
 
 ### Production Build
-\`\`\`bash
+```bash
 # Backend
 cd server
 npm install --production
@@ -233,12 +233,12 @@ npm start
 cd client
 npm run build
 # Serve build files with nginx or similar
-\`\`\`
+```
 
 ### Environment Variables
 
 #### Server (.env)
-\`\`\`env
+```env
 NODE_ENV=production
 PORT=5000
 DB_HOST=your_db_host
@@ -247,13 +247,13 @@ DB_USER=your_db_user
 DB_PASSWORD=your_db_password
 JWT_SECRET=your_jwt_secret
 CLIENT_URL=https://your-domain.com
-\`\`\`
+```
 
 #### Client (.env)
-\`\`\`env
+```env
 REACT_APP_API_URL=https://your-api-domain.com/api
 REACT_APP_SOCKET_URL=https://your-api-domain.com
-\`\`\`
+```
 
 ## 🤝 Contributing
 
@@ -270,7 +270,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 🙋‍♂️ Support
 
 If you have any questions or issues, please open an issue on GitHub.
-\`\`\`
+```
 
 ## ✨ Future Enhancements
 
@@ -290,4 +290,5 @@ If you have any questions or issues, please open an issue on GitHub.
 ---
 
 Built with ❤️ using modern web technologies
-\`\`\`
+
+```
